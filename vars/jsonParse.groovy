@@ -1,4 +1,3 @@
-#!/usr/bin/groovy
 import groovy.json.JsonSlurperClassic 
 
 @NonCPS
