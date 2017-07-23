@@ -1,9 +1,11 @@
 def call(credentials, account, srcNo, dstNo, msg){
-    String payLoad = """
+  String encoded_msg = java.net.URLEncoder.encode(msg)
+
+  String payLoad = """
 {
   "src":"$srcNo",
   "dst":"$dstNo", 
-  "text": "java.net.URLEncoder.encode(msg)"
+  "text": "$encoded_msg"
 }
 """
 
